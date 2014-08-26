@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>
-        Main
+        Jon's Shopping List App
     </title>
     <link rel="stylesheet" type="text/css" href="main.css">
     <script type="text/montage-serialization">
@@ -11,6 +11,19 @@
         "owner": {
             "properties": {
                 "element": {"#": "main"}
+            }
+        },
+        "add_item": {
+            "prototype": "ui/add_item.reel",
+            "properties": {
+                "element": {"#": "add_item"}
+            }
+        },
+        "button": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "enabled": true,
+                "label": "Button"
             }
         },
         "montageVersion": {
@@ -30,6 +43,8 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <h1>Jon's Shopping List App</h1>
+        <div data-montage-id="add_item"></div>
         <ul data-montage-id="repetition">
             <li></li>
         </ul>
