@@ -23,31 +23,28 @@
             "prototype": "digit/ui/button.reel",
             "properties": {
                 "enabled": true,
-                "label": "Button"
+                "label": "Add Item"
             }
         },
         "repetition": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
-                "element": {"#": "repetition"}
+                "element": {"#": "repetition"},
+                "clonesChildComponents": false
             }
         }
     }
     </script>
 </head>
 <body>
-    
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <h1>Jon's Shopping List App</h1>
+        <h1>
+            Jon's Shopping List App
+        </h1>
         <div data-montage-id="add_item"></div>
         <ul data-montage-id="repetition">
-            <li>Item 1</li><button>delete</button>
-            <li>Item 2</li><button>delete</button>
-            <li>Item 3</li><button>delete</button>
-            <li>Item 4</li><button>delete</button>
-            <li>Item 5</li><button>delete</button>
+            <li></li>
         </ul>
-       
     </div>
 </body>
 </html>
