@@ -13,23 +13,10 @@
                 "element": {"#": "main"}
             }
         },
-        "actionEventListener2": {
-            "prototype": "montage/core/event/action-event-listener",
-            "properties": {
-                "action": "addContent",
-                "handler": {"@": "rangeController"}
-            },
-            "_dev": {
-                "isHidden": true
-            }
-        },
         "badge": {
             "prototype": "digit/ui/badge.reel",
             "properties": {
                 "element": {"#": "badge"}
-            },
-            "bindings": {
-                "value": {"<-": "@rangeController.organizedContent.filter{!purchased}.length."}
             }
         },
         "button": {
@@ -38,14 +25,7 @@
                 "element": {"#": "button"},
                 "enabled": true,
                 "label": "Add Item"
-            },
-            "listeners": [
-                {
-                    "type": "action",
-                    "useCapture": true,
-                    "listener": {"@": "actionEventListener2"}
-                }
-            ]
+            }
         },
         "item": {
             "prototype": "ui/item.reel"
@@ -71,14 +51,7 @@
             "properties": {
                 "element": {"#": "newItem"},
                 "placeholderValue": "Text"
-            },
-            "listeners": [
-                {
-                    "type": "value",
-                    "useCapture": true,
-                    "listener": {"@": "rangeController"}
-                }
-            ]
+            }
         },
         "rangeController": {
             "prototype": "montage/core/range-controller",
