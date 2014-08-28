@@ -17,6 +17,13 @@ exports.Main = Component.specialize(/** @lends Main# */ {
 
     captureButtonAction: {
         value: function (event) {
+            rangeController.addContent();
+            rangeController.content[rangeController.length-1] = newItem.value;
+        }
+    },
+
+    handleButtonAction: {
+        value: function (event) {
         }
     }
 
