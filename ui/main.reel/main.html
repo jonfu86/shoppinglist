@@ -12,43 +12,6 @@
             "properties": {
                 "element": {"#": "main"}
             }
-        },
-        "add_item": {
-            "prototype": "ui/add_item.reel",
-            "properties": {
-                "element": {"#": "add_item"}
-            }
-        },
-        "destroy_button": {
-            "prototype": "digit/ui/button.reel",
-            "properties": {
-                "enabled": true,
-                "label": "Remove Item"
-            }
-        },
-        "itemTitle": {
-            "prototype": "montage/ui/text.reel",
-            "properties": {
-                "element": {"#": "itemTitle"}
-            },
-            "bindings": {
-                "value": {"<-": "@owner.item.title"}
-            }
-        },
-         "itemPurchased": {
-            "prototype": "digit/ui/checkbox.reel",
-            "properties": {
-                "element": {"#": "itemPurchased"}
-            },
-            "bindings": {
-                "checked": {"<->": "@owner.item.completed"}
-            }
-        },
-        "repetition": {
-            "prototype": "montage/ui/repetition.reel",
-            "properties": {
-                "clonesChildComponents": false
-            }
         }
     }
     </script>
@@ -58,14 +21,7 @@
         <h1>
             Jon's Shopping List App
         </h1>
-        <div data-montage-id="add_item"></div>
-        <ul data-montage-id="repetition">
-            <li>
-                <input data-montage-id="itemPurchased" class="toggle" type="checkbox">
-                <label data-montage-id="itemTitle"></label>
-                <button data-montage-id="destroy_button" class="destroy"></button>
-            </li>
-        </ul>
+        
     </div>
 </body>
 </html>
