@@ -19,11 +19,11 @@
                 "element": {"#": "add_item"}
             }
         },
-        "button": {
+        "destroy_button": {
             "prototype": "digit/ui/button.reel",
             "properties": {
                 "enabled": true,
-                "label": "Add Item"
+                "label": "Remove Item"
             }
         },
         "itemTitle": {
@@ -33,6 +33,15 @@
             },
             "bindings": {
                 "value": {"<-": "@owner.item.title"}
+            }
+        },
+         "itemPurchased": {
+            "prototype": "digit/ui/checkbox.reel",
+            "properties": {
+                "element": {"#": "itemPurchased"}
+            },
+            "bindings": {
+                "checked": {"<->": "@owner.item.completed"}
             }
         },
         "repetition": {
@@ -52,7 +61,9 @@
         <div data-montage-id="add_item"></div>
         <ul data-montage-id="repetition">
             <li>
+                <input data-montage-id="itemPurchased" class="toggle" type="checkbox">
                 <label data-montage-id="itemTitle"></label>
+                <button data-montage-id="destroy_button" class="destroy"></button>
             </li>
         </ul>
     </div>
