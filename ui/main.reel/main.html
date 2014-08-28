@@ -23,6 +23,15 @@
                 "isHidden": true
             }
         },
+        "badge": {
+            "prototype": "digit/ui/badge.reel",
+            "properties": {
+                "element": {"#": "badge"}
+            },
+            "bindings": {
+                "value": {"<-": "@rangeController.organizedContent.filter{!purchased}.length."}
+            }
+        },
         "button": {
             "prototype": "digit/ui/button.reel",
             "properties": {
@@ -38,6 +47,18 @@
                 }
             ]
         },
+        "item": {
+            "prototype": "ui/item.reel"
+        },
+        "item1": {
+            "prototype": "ui/item.reel",
+            "properties": {
+                "element": {"#": "item1"}
+            },
+            "bindings": {
+                "item": {"<-": "@list:iteration.object"}
+            }
+        },
         "list": {
             "prototype": "digit/ui/list.reel",
             "properties": {
@@ -45,10 +66,20 @@
                 "contentController": {"@": "rangeController"}
             }
         },
+        "newItem": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "newItem"},
+                "placeholderValue": "Text"
+            }
+        },
         "rangeController": {
             "prototype": "montage/core/range-controller",
             "properties": {
-              
+                "content": [
+                    ""
+                ],
+                "organizedContent": []
             }
         },
         "title": {
@@ -64,9 +95,11 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <h1 data-montage-id="title"></h1>
+        <input data-montage-id="newItem" type="text">
         <button data-montage-id="button"></button>
+        <output data-montage-id="badge"></output>
         <ul data-montage-id="list">
-            <li></li>
+            <li data-montage-id="item1"></li>
         </ul>
     </div>
 </body>
