@@ -26,20 +26,19 @@
                 "label": "Add Item"
             }
         },
-        "repetition": {
-            "prototype": "montage/ui/repetition.reel",
-            "properties": {
-                "element": {"#": "repetition"},
-                "clonesChildComponents": false
-            }
-        },
-        "item": {
+        "itemTitle": {
             "prototype": "montage/ui/text.reel",
             "properties": {
-                "element": {"#": "item"}
+                "element": {"#": "itemTitle"}
             },
             "bindings": {
                 "value": {"<-": "@owner.item.title"}
+            }
+        },
+        "repetition": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "clonesChildComponents": false
             }
         }
     }
@@ -52,7 +51,7 @@
         </h1>
         <div data-montage-id="add_item"></div>
         <ul data-montage-id="repetition">
-            <li></li>
+            <li data-montage-id="itemTitle"></li>
         </ul>
     </div>
 </body>
