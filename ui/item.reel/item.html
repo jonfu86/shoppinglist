@@ -43,7 +43,10 @@
                     "useCapture": false,
                     "listener": {"@": "actionEventListener"}
                 }
-            ]
+            ],
+             "bindings": {
+                "detail.get('item')": {"<-": "@owner.item"}
+            }
         },
         "text": {
             "prototype": "digit/ui/text.reel",
