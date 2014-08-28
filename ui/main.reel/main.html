@@ -11,7 +11,14 @@
         "owner": {
             "properties": {
                 "element": {"#": "main"}
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+                ],
         },
         "badge": {
             "prototype": "digit/ui/badge.reel",
