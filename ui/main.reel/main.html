@@ -43,7 +43,7 @@
                 {
                     "type": "action",
                     "useCapture": true,
-                    "listener": {"@": "actionEventListener"}
+                    "listener": {"@": "owner"}
                 }
             ]
         },
@@ -71,7 +71,14 @@
             "properties": {
                 "element": {"#": "newItem"},
                 "placeholderValue": "Text"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "value",
+                    "useCapture": true,
+                    "listener": {"@": "actionEventListener"}
+                }
+            ]
         },
         "rangeController": {
             "prototype": "montage/core/range-controller",
