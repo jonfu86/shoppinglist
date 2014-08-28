@@ -25,7 +25,14 @@
                 "element": {"#": "button"},
                 "enabled": true,
                 "label": "Add Item"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
         "item": {
             "prototype": "ui/item.reel"
