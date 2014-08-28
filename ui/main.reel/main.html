@@ -32,6 +32,15 @@
                 "element": {"#": "repetition"},
                 "clonesChildComponents": false
             }
+        },
+        "item": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "item"}
+            },
+            "bindings": {
+                "value": {"<-": "@owner.item.title"}
+            }
         }
     }
     </script>
