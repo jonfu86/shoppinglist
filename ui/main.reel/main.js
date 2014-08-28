@@ -15,9 +15,9 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         }
     },
 
-    captureButtonAction: {
+    handleAction: {
         value: function (event) {
-           
+           console.log(event)
         }
     },
 
