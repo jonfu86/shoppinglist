@@ -33,9 +33,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     
     handleDestroyButtonAction:{
         value: function (event) {
-
-            console.log(event.detail.get('item'))
-            // this.templateObjects.rangeController.
+            this.templateObjects.rangeController.delete(event.detail.get('item'))
         }
     }
 
