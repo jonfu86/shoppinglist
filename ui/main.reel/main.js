@@ -18,7 +18,6 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     handleNewItemAction: {
         value: function (event) {
            console.log(event)
-           this.handleCreateButtonAction(event);
         }
     },
 
@@ -32,11 +31,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         }
     },
     
-    _addContent: {
-        value: function () {
-            
-        }
-    },
+   
     
     handleDestroyButtonAction:{
         value: function (event) {
