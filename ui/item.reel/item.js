@@ -13,5 +13,13 @@ exports.Item = Component.specialize(/** @lends Item# */ {
         value: function Item() {
             this.super();
         }
+    },
+    
+    handleDestroyButtonAction:{
+         value: function (event) {
+             this.templateObjects.rangeController.removeContent();
+         }
     }
+    
+    
 });
