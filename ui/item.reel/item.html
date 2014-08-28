@@ -10,6 +10,16 @@
                 "element": {"#": "owner"}
             }
         },
+        "actionEventListener": {
+            "prototype": "montage/core/event/action-event-listener",
+            "properties": {
+                "action": "destroyItem",
+                "handler": {"@": "owner"}
+            },
+            "_dev": {
+                "isHidden": true
+            }
+        },
         "checkbox": {
             "prototype": "digit/ui/checkbox.reel",
             "properties": {
@@ -30,8 +40,8 @@
             "listeners": [
                 {
                     "type": "action",
-                    "useCapture": true,
-                    "listener": {"@": "owner"}
+                    "useCapture": false,
+                    "listener": {"@": "actionEventListener"}
                 }
             ]
         },
@@ -40,6 +50,9 @@
             "properties": {
                 "element": {"#": "text"},
                 "value": ""
+            },
+            "bindings": {
+                "value": {"<-": "@owner.item.text"}
             }
         }
     }
