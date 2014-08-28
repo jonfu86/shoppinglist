@@ -29,6 +29,14 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             //this.templateObjects.rangeController.content[this.templateObjects.rangeController.content.length-2].text = ;
            
         }
+    },
+    
+    handleDestroyButtonAction:{
+        value: function (event) {
+
+            console.log(event.detail.get('item'))
+            // this.templateObjects.rangeController.
+        }
     }
 
 });
