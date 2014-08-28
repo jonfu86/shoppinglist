@@ -1,12 +1,12 @@
 .Item {
     
 }
-#checkbox{
+.checkbox{
     display:inline;
 }
-#text{
+.text{
     display:inline;
 }
-#destroyButton{
+.destroyButton{
     display:inline;
 }
