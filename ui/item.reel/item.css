@@ -1,3 +1,12 @@
 .Item {
+    
+}
+#checkbox{
+    display:inline-block;
+}
+#text{
+    display:inline-block;
+}
+#destroyButton{
     display:inline-block;
 }
