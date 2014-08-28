@@ -19,10 +19,13 @@
             }
         },
         "textField": {
-            "prototype": "digit/ui/text-field.reel",
+            "prototype": "digit/ui/input-text.reel",
             "properties": {
                 "element": {"#": "textField"},
                 "placeholderValue": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@owner.todo.title"}
             }
         }
     }
