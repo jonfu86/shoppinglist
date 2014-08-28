@@ -28,13 +28,6 @@
                 "enabled": true,
                 "label": "Destroy"
             },
-            "listeners": [
-                {
-                    "type": "action",
-                    "useCapture": false,
-                    "listener": {"@": "owner"}
-                }
-            ],
              "bindings": {
                 "detail.get('item')": {"<-": "@owner.item"}
             }
