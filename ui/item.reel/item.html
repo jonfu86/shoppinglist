@@ -9,12 +9,50 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "checkbox": {
+            "prototype": "digit/ui/checkbox.reel",
+            "properties": {
+                "element": {"#": "checkbox"},
+                "checked": true
+            },
+            "bindings": {
+                "checked": {"<->": "@owner.item.purchased"}
+            }
+        },
+        "destroyButton": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "destroyButton"},
+                "enabled": true,
+                "label": "Destroy"
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": true,
+                    "listener": {"@": "owner"}
+                }
+            ]
+        },
+        "text": {
+            "prototype": "digit/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": ""
+            },
+            "bindings": {
+                "value": {"<->": "@owner.newItem.value"}
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="Item">
+        <input type="checkbox" data-montage-id="checkbox">
+        <p data-montage-id="text"></p>
+        <button data-montage-id="destroyButton"></button>
     </div>
 </body>
 </html>

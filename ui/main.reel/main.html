@@ -13,7 +13,7 @@
                 "element": {"#": "main"}
             }
         },
-        "actionEventListener": {
+        "actionEventListener2": {
             "prototype": "montage/core/event/action-event-listener",
             "properties": {
                 "action": "addContent",
@@ -43,7 +43,7 @@
                 {
                     "type": "action",
                     "useCapture": true,
-                    "listener": {"@": "owner"}
+                    "listener": {"@": "actionEventListener2"}
                 }
             ]
         },
@@ -76,7 +76,7 @@
                 {
                     "type": "value",
                     "useCapture": true,
-                    "listener": {"@": "actionEventListener"}
+                    "listener": {"@": "rangeController"}
                 }
             ]
         },
