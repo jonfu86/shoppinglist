@@ -25,8 +25,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
 
     handleButtonAction: {
         value: function (event) {
-            rangeController.addContent();
-            rangeController.content[rangeController.length-1].text = newItem.value;
+            this.templateobjects.rangeController.addContent();
+            this.templateobjects.rangeController.content[this.templateobjects.rangeController.length-1].text = newItem.value;
             console.log('hi');
         }
     }
