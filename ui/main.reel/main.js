@@ -33,13 +33,14 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     
     handleDestroyButtonAction:{
         value: function (event) {
+           
             this.templateObjects.rangeController.delete(event.detail.get('item'))
         }
     },
     
     handleClearButtonAction:{
         value: function (event) {
-            this.templateObjects.rangeController.delete('item')
+            this.templateObjects.rangeController.clear()
             alert('test')
         }
     }
