@@ -10,5 +10,6 @@
     width:70%;
 }
 .digit-Button{
+   display:inline-block;
    margin-right:0%;  
 }
