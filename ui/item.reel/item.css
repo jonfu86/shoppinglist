@@ -6,6 +6,7 @@
 }
 .item_text{
     display:inline-block;
+    width:200px
 }
 .destroyButton{
     display:inline-block;
