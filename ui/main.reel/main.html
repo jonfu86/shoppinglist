@@ -26,7 +26,7 @@
                 "element": {"#": "badge"}
             },
             "bindings": {
-                "value": {"<-": "@rangeController.organizedContent.filter{purchased}.length"}
+                "value": {"<-": "@rangeController.organizedContent.filter{!purchased}.length"}
             }
         },
         "createButton": {
