@@ -13,5 +13,13 @@ exports.Modal = Component.specialize(/** @lends Modal# */ {
         value: function Modal() {
             this.super();
         }
+    },
+    
+    handleConfirmAction{
+
+    },
+                                     
+    handleCancelAction{
+                                     
     }
 });
