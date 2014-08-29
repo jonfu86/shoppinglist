@@ -8,12 +8,5 @@
 }
 .digit-TextField{
     width:70%;
-}
-.createButton{
-   display:inline-block;
-   margin-right:0%;  
-}
-.digit-Button{
-    display:inline-block;
-    margin-right:0%;
+    margin-right:20px;
 }
