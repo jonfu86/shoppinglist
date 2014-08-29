@@ -24,6 +24,9 @@
             "prototype": "digit/ui/badge.reel",
             "properties": {
                 "element": {"#": "badge"}
+            },
+            "bindings": {
+                "value": {"<-": "@rangeController.organizedContent.filter{purchased}.length"}
             }
         },
         "createButton": {
@@ -34,7 +37,6 @@
                 "label": "Add Item"
             }
         },
- 
         "item1": {
             "prototype": "ui/item.reel",
             "properties": {
@@ -60,7 +62,6 @@
         },
         "rangeController": {
             "prototype": "montage/core/range-controller"
-
         },
         "title": {
             "prototype": "digit/ui/title.reel",
