@@ -41,7 +41,6 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     handleClearButtonAction:{
         value: function (event) {
             this.templateObjects.rangeController.clear()
-            alert('test')
         }
     }
 
