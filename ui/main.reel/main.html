@@ -29,6 +29,14 @@
                 "value": {"<-": "@rangeController.organizedContent.filter{!purchased}.length"}
             }
         },
+        "clearButton": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "clearButton"},
+                "enabled": true,
+                "label": "Clear List"
+            }
+        },
         "createButton": {
             "prototype": "digit/ui/button.reel",
             "properties": {
@@ -85,6 +93,7 @@
         <ul data-montage-id="list">
             <li data-montage-id="item1"></li>
         </ul>
+        <button data-montage-id="clearButton"></button>
     </div>
 </body>
 </html>
