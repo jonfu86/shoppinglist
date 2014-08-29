@@ -9,12 +9,49 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "Cancel": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "Cancel"},
+                "enabled": true,
+                "label": "Cancel"
+            }
+        },
+        "Confirm": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "Confirm"},
+                "enabled": true,
+                "label": "Confirm Purchase"
+            }
+        },
+        "overlay": {
+            "prototype": "montage/ui/overlay.reel",
+            "properties": {
+                "element": {"#": "overlay"},
+                "element": {"#": "text"},
+                "element": {"#": "Confirm"},
+                "element": {"#": "Cancel"}
+            }
+        },
+        "text": {
+            "prototype": "digit/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Please confirm that you are purchasing the items you have selected. Confirming will send a notification to your list members."
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="Modal">
+        <div data-montage-id="overlay">
+            <p data-montage-id="text"></p>
+            <button data-montage-id="Confirm"></button>
+            <button data-montage-id="Cancel"></button>
+        </div>
     </div>
 </body>
 </html>
