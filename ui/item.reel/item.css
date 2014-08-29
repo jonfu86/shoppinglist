@@ -2,11 +2,11 @@
     
 }
 .checkbox{
-    display:inline;
+    display:inline-block;
 }
 .item_text{
-    display:inline;
+    display:inline-block;
 }
 .destroyButton{
-    display:inline;
+    display:inline-block;
 }
