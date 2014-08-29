@@ -14,7 +14,11 @@ exports.Modal = Component.specialize(/** @lends Modal# */ {
             this.super();
         }
     },
-    overlayModal.show();
+     handleClearButtonAction:{
+         value: function (event) {
+             this.templateObjects.rangeController.clear()
+         }
+     }
     
    
 });
