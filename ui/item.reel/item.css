@@ -6,7 +6,8 @@
 }
 .item_text{
     display:inline-block;
-    width:200px
+    width:200px;
+    text-align:right;
 }
 .destroyButton{
     display:inline-block;
