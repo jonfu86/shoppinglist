@@ -26,6 +26,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             this.templateObjects.rangeController.add({
                 text: this.templateObjects.newItem.value
             });
+            this.templateObjects.newItem.value = ''
             //this.templateObjects.rangeController.content[this.templateObjects.rangeController.content.length-2].text = ;
            
         }
