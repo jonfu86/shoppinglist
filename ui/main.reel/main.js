@@ -41,7 +41,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     
     handleClearButtonAction:{
         value: function (event) {
-            overlayModal.show()
+            Modal.show()
             //this.templateObjects.rangeController.clear()
         }
     }
