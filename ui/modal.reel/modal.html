@@ -10,18 +10,18 @@
                 "element": {"#": "owner"}
             }
         },
-        "Cancel": {
+        "cancelButton": {
             "prototype": "digit/ui/button.reel",
             "properties": {
-                "element": {"#": "Cancel"},
+                "element": {"#": "cancelButton"},
                 "enabled": true,
                 "label": "Cancel"
             }
         },
-        "Confirm": {
+        "confirmButton": {
             "prototype": "digit/ui/button.reel",
             "properties": {
-                "element": {"#": "Confirm"},
+                "element": {"#": "confirmButton"},
                 "enabled": true,
                 "label": "Confirm Purchase"
             }
@@ -46,8 +46,8 @@
     <div data-montage-id="owner" class="Modal">
         <div data-montage-id="overlayModal">
             <p data-montage-id="text"></p>
-            <button data-montage-id="Confirm"></button>
-            <button data-montage-id="Cancel"></button>
+            <button data-montage-id="confirmButton"></button>
+            <button data-montage-id="cancelButton"></button>
         </div>
     </div>
 </body>

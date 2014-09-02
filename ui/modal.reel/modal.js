@@ -20,7 +20,7 @@ exports.Modal = Component.specialize(/** @lends Modal# */ {
            //overlayModal.show();
         }
     },
-    handleConfirmAction:{
+    handleConfirmButtonAction:{
         value: function (event) {
             console.log('hi');
             this.dispatchEventNamed("clearRangeController", true, true, {})
