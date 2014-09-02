@@ -20,6 +20,12 @@ exports.Modal = Component.specialize(/** @lends Modal# */ {
            //overlayModal.show();
         }
     },
+    handleConfirmButtonAction:{
+        value: function (event) {
+            this.templateObjects.rangeController.clear();
+            this.templateObjects.overlayModal.hide();
+        }
+    }
     
    
 });
