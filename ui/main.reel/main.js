@@ -12,7 +12,11 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     constructor: {
         value: function Main() {
             this.super();
+            this.application.addEventListener( "clearRangeController", this, false);
+        
         }
+        
+        
     },
 
     handleNewItemAction: {
@@ -46,8 +50,10 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         }
     },
     
-    clearRangeController:{
+    rangeController:{
         value: function (event) {
+            this.addEventListener("clearRangeController", 
+    
             this.templateObjects.rangeController.clear();
         }
     }
