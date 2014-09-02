@@ -26,6 +26,7 @@ exports.Modal = Component.specialize(/** @lends Modal# */ {
         value: function (event) {
             
             this.dispatchEventNamed("clearRangeController", true, true, {})
+            this.templateObjects.overlayModal.hide();
             //this.templateObjects.main.clearRangeController();
             //this.templateObjects.overlayModal.hide();
         }
@@ -34,7 +35,7 @@ exports.Modal = Component.specialize(/** @lends Modal# */ {
 
     handleCancelButtonAction: {
         value: function (event) {
-             this.templateObjects.overlayModal.hide()
+             this.templateObjects.overlayModal.hide();
         }
     }
 
