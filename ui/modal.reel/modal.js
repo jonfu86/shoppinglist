@@ -16,10 +16,10 @@ exports.Modal = Component.specialize(/** @lends Modal# */ {
     },
     
     activateModal:{
-    value: function (event) {
-           this.templateObjects.overlayModal.show();
-           //overlayModal.show();
-        }
+        value: function (event) {
+               this.templateObjects.overlayModal.show();
+               //overlayModal.show();
+            }
     },
     
     handleConfirmButtonAction:{
