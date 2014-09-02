@@ -16,7 +16,14 @@
                 "element": {"#": "cancelButton"},
                 "enabled": true,
                 "label": "Cancel"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
         "confirmButton": {
             "prototype": "digit/ui/button.reel",
@@ -24,7 +31,14 @@
                 "element": {"#": "confirmButton"},
                 "enabled": true,
                 "label": "Confirm Purchase"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
         "overlayModal": {
             "prototype": "montage/ui/overlay.reel",

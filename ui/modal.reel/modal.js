@@ -29,7 +29,16 @@ exports.Modal = Component.specialize(/** @lends Modal# */ {
             //this.templateObjects.main.clearRangeController();
             //this.templateObjects.overlayModal.hide();
         }
+    },
+
+    handleOwnerAction: {
+        value: function (event) {
+        }
+    },
+
+    handleCancelButtonAction: {
+        value: function (event) {
+        }
     }
-    
-   
+
 });
