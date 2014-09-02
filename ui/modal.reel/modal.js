@@ -23,7 +23,7 @@ exports.Modal = Component.specialize(/** @lends Modal# */ {
     handleConfirmAction:{
         value: function (event) {
             this.templateObjects.rangeController.clear();
-            this.templateObjects.overlayModal.hide();
+            //this.templateObjects.overlayModal.hide();
         }
     }
     
