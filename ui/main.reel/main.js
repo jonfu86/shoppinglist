@@ -50,10 +50,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         }
     },
     
-    rangeController:{
+    clearRangeController:{
         value: function (event) {
-            this.addEventListener("clearRangeController", 
-    
             this.templateObjects.rangeController.clear();
         }
     }
