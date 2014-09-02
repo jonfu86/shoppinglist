@@ -31,13 +31,10 @@ exports.Modal = Component.specialize(/** @lends Modal# */ {
         }
     },
 
-    handleOwnerAction: {
-        value: function (event) {
-        }
-    },
 
     handleCancelButtonAction: {
         value: function (event) {
+             this.templateObjects.overlayModal.hide()
         }
     }
 
