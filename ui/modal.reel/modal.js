@@ -14,12 +14,14 @@ exports.Modal = Component.specialize(/** @lends Modal# */ {
             this.super();
         }
     },
+    
     activateModal:{
     value: function (event) {
            this.templateObjects.overlayModal.show();
            //overlayModal.show();
         }
     },
+    
     handleConfirmButtonAction:{
         value: function (event) {
             console.log('hi');
