@@ -22,7 +22,8 @@ exports.Modal = Component.specialize(/** @lends Modal# */ {
     },
     handleConfirmAction:{
         value: function (event) {
-            this.templateObjects.main.clearRangeController();
+            this.dispatchEventNamed("clearRangeController", false, false)
+            //this.templateObjects.main.clearRangeController();
             //this.templateObjects.overlayModal.hide();
         }
     }
