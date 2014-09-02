@@ -44,6 +44,13 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             this.templateObjects.modal.activateModal();
            // this.templateObjects.rangeController.clear()
         }
+    },
+    
+    clearRangeController:{
+        value: function (event) {
+            this.templateObjects.rangeController.clear();
+        }
     }
+        
 
 });
